@@ -14,27 +14,25 @@ const App = () => {
       element:<Main></Main>,
       children :[
          {
-          path:'/',
-          element:<Home></Home>
-         },
-         {
           path:'home',
+          loader: async()=>{
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
           element:<Home></Home>
         },
+        {
+          path:'blog',
+          element:<Blogs></Blogs>
+          },
+        {
+          path:'statistics',
+          element:<Statistics></Statistics>
+        }  
       ]
      
     },
    
     
-  
-     {
-      path:'blog',
-      element:<Blogs></Blogs>
-      },
-    {
-      path:'statistics',
-      element:<Statistics></Statistics>
-    }  
   
   ])
   return (
