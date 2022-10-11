@@ -8,7 +8,7 @@ const Home = ({params}) => {
  
     const products = useLoaderData()
     return (
-        <div>
+        <div className='totalHome'>
             {
                 products.data.map((product)=>(
                  <Topics key={product.id} product={product}></Topics>
