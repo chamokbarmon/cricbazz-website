@@ -1,0 +1,42 @@
+.header{
+     display: flex;
+     background-color: brown;
+}
+.link {
+    text-decoration: none;
+    justify-content: center;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-left: 900px;
+}
+.world{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.header-Nav{
+    margin-top: 20px;
+    display: flex;
+}
+.header-Nav img{
+    height: 400px;
+    width: 400px;
+    margin-left: 20px;
+    
+}
+.program-name{
+    margin-left: 400px;
+}
+.founder{
+    width: 800px;
+    margin-left: 100px;
+    font-size: 20px;
+
+}

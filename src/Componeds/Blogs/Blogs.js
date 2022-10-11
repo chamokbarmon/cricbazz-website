@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from '../Headers/Header';
+
 
 const Blogs = () => {
     return (
         <div>
-            <Header></Header>
+         
            <h1>This is blog</h1> 
+           <h2>Hlw how are you</h2>
         </div>
     );
 };
