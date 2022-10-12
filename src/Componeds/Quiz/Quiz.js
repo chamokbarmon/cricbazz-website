@@ -27,7 +27,7 @@ const Quiz = ({product}) => {
             </div>
           </div>
           <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-3 px-5">
-          {Skills.map((skill)=>(
+          {options.map((skill)=>(
             <Skills
             key={skill.id}
             skill={skill}

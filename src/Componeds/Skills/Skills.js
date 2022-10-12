@@ -18,7 +18,7 @@ const Skills = ({ skill, correctAnswer }) => {
         className="lg:max-w-[350px] sm:mx-w-[200px] lg:h-[80px] sm:h-[50px] sm:flex sm:items-start sm:justify-center border-2  rounded-none hover:bg-purple-200 cursor-pointer text-black"
       >
         <div className="max-w-[300px] h-[7px] mx-auto font-bold font-mono flex items-center justify-center">
-          <ToastContainer theme="colored">{skill}</ToastContainer>
+          <ToastContainer theme="colored"></ToastContainer>{skill}
         </div>
       </div>
     );
