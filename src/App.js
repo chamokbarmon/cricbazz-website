@@ -2,6 +2,7 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Blogs from './Componeds/Blogs/Blogs';
 import Home from './Componeds/Homes/Home';
+import QuizDetails from './Componeds/QuizDetails/QuizDetails';
 import Statistics from './Componeds/Statistics/Statistics';
 import Main from './Layout/Main';
 
@@ -26,15 +27,26 @@ const App = () => {
           element:<Statistics></Statistics>
         }, 
        
+       
       ]
      
     },
-   
+    {
+      path:'*', element:<div>This route not found --404</div>
+    },
+    {
+      path:'/product/:nameid',
+      loader:async({params}) =>{
+        return fetch(` https://openapi.programming-hero.com/api/quiz/${params.nameid}`)
+         
+      },
+      element:<QuizDetails></QuizDetails>
+    }
     
   
   ])
   return (
-    <div>
+    <div className='app'>
  
     <RouterProvider router={router}></RouterProvider>
 

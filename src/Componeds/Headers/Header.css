@@ -51,7 +51,15 @@
     }
 }
 @media only screen and (max-width:600px) {
+    .nav{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
     .header-Nav{
+        width:100%;
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
